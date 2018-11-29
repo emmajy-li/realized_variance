@@ -158,12 +158,6 @@ proc univariate data = trades_rv_diff_&i_year.&j_day noprint;
 	histogram rv_diff_2_Sum / BARLABEL = COUNT;
 run;
 
-proc univariate data = trades_rv_diff_&i_year.&j_day noprint;
-        var rv_diff_3_Sum;
-        histogram rv_diff_3_Sum / BARLABEL = COUNT;
-run;
-
-
 /*
 filename output ’rv_diff_2_Sum.pdf’;
 proc univariate data = trades_rv_diff_&i_year.&j_day noprint;
